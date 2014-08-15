@@ -1,3 +1,5 @@
+require 'clipboard'
+
 class Vindinium
 
   attr_accessor :games, :turns, :mode, :key, :server, :state, :http_client, :error, :bot, :debug
@@ -27,6 +29,9 @@ class Vindinium
       return
     else
       puts "New Game started at:\n#{self.state['viewUrl']}"
+      
+      # allow the live player to paste the view URL into their browser
+      Clipboard.copy(self.state['viewUrl'])
     end
 
     until finished? do

@@ -2,6 +2,7 @@ GEM
   remote: https://rubygems.org/
   specs:
     awesome_print (1.2.0)
+    clipboard (1.0.5)
     httpclient (2.3.4.1)
     rainbow (2.0.0)
 
@@ -10,5 +11,6 @@ PLATFORMS
 
 DEPENDENCIES
   awesome_print
+  clipboard
   httpclient
   rainbow
