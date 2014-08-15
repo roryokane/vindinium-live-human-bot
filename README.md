@@ -1,6 +1,6 @@
 # LiveHumanBot for Vindinium
 
-A bot for the [Vindinium](http://vindinium.org/) AI playground that is actually not a bot, but a very simplistic client for a human player. Who is better at this game – humans or the bots that they make?
+A bot for the [Vindinium](http://vindinium.org/) AI challenge that is actually not a bot, but a very simplistic client for a human player. Who is better at this game – humans or the bots that they make?
 
 It works by exploiting the fact that the [Vindinium API](http://vindinium.org/starters) gives you 2 seconds to send your move before your bot times out and is marked as “crashed”. This program waits for user input for 1 second at the start of each turn, which gives it a 1-second margin to actually send its move over the network. If the user doesn’t input anything within that second, the program still sends a `Stay` command.
 
